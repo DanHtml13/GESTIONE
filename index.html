@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Gestión</title>
+    <link rel="icon" href="/media/">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #faf3e0; /* Color de fondo claro */
+        }
+        header {
+            background-color: #ff5722; /* Color de encabezado */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffe0b2; /* Color al pasar el ratón */
+        }
+        section {
+            padding: 80px 20px;
+            max-width: 900px;
+            margin: auto;
+            margin-top: 80px;
+        }
+        h2 {
+            color: #e64a19; /* Color de encabezados */
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .service-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .service-card img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        button {
+            background-color: #ff5722; /* Color del botón */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            display: block;
+            margin: 20px auto; /* Centrando el botón */
+        }
+        button:hover {
+            background-color: #e64a19; /* Color al pasar el ratón */
+            transform: scale(1.05);
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Servicios de Gestión</h1>
+    <nav>
+        <a href="#presentacion">Presentación</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section id="presentacion">
+    <h2>Presentación de la Empresa</h2>
+    <p>Como aliados en distintas áreas de su negocio, nuestra prioridad es dinamizar el desempeño de su gestión. Nos enfocamos en alcanzar óptimos niveles de eficiencia en el manejo de su Contabilidad, Impuestos, Nómina, Tesorería y Gestión Humana, entre otros servicios. Estamos comprometidos en brindar soluciones integrales que se adapten a las necesidades específicas de cada cliente, maximizando su productividad y minimizando riesgos.</p>
+</section>
+
+<section id="servicios">
+    <h2>Servicios Ofrecidos</h2>
+    <div class="services">
+        <div class="service-card">
+            <img src="https://ia-colombia.co/wp-content/uploads/2023/05/contabilidad.png" alt="Contabilidad">
+            <h3>Contabilidad</h3>
+            <p>Gestión contable completa para asegurar que tus registros estén siempre al día.</p>
+        </div>
+        <div class="service-card">
+            <img src="https://impulsapopular.com/wp-content/uploads/2022/03/5057-Impuestos-de-importacion-que-se-deben-pagar-en-Republica-Dominicana.jpg?" alt="Impuestos">
+            <h3>Impuestos</h3>
+            <p>Asesoría y gestión para cumplir con tus obligaciones fiscales de manera eficiente.</p>
+        </div>
+        <div class="service-card">
+            <img src="https://www.bizneo.com/blog/wp-content/uploads/2023/06/Software-de-nomina.jpg" alt="Nómina">
+            <h3>Nómina</h3>
+            <p>Administración de nómina y beneficios para asegurar el bienestar de tu equipo.</p>
+        </div>
+        <div class="service-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJmwFzbbRbru9vkhRji0ipk3KyiGIB9-kF4A&s" alt="Tesorería">
+            <h3>Tesorería</h3>
+            <p>Gestión de flujos de efectivo y planificación financiera para una salud económica óptima.</p>
+        </div>
+        <div class="service-card">
+            <img src="https://www.anticipacionycontrol.com/wp-content/uploads/2024/02/Que-es-la-gestion-humana.jpg" alt="Gestión Humana">
+            <h3>Gestión Humana</h3>
+            <p>Soluciones para el manejo del talento humano que potencien tu organización.</p>
+        </div>
+    </div>
+    <button onclick="scrollToContact()">Contáctanos</button>
+</section>
+
+<section id="contacto">
+    <h2>Contáctanos</h2>
+    <form class="contact-form" onsubmit="return handleSubmit(event)">
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu correo" required>
+        <textarea placeholder="Tu mensaje" required></textarea>
+        <input type="submit" value="Enviar">
+    </form>
+    <p>O envíanos un correo a <a href="mailto:info@servicios.com">info@servicios.com</a>.</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Servicios de Gestión. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+    function scrollToContact() {
+        document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        alert('Gracias por tu mensaje! Nos pondremos en contacto pronto.');
+        event.target.reset();
+    }
+</script>
+
+</body>
+</html>
